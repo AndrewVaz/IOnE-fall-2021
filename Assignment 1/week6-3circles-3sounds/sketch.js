@@ -150,7 +150,7 @@ function gotRawData(thedata) {
 
 
 function draw() {
-
+  // Part 2---------------------------------------------------------------------------------------------------------------
   noStroke();
   background(0, 0, 0);
   text(latestData, 10, 10);
@@ -188,10 +188,59 @@ function draw() {
   var freq2 = map(-diameter1, 0, -width, 500, 100);
   osc2.freq(freq2);
   //console.log(freq2);
+  // Part 2---------------------------------------------------------------------------------------------------------------
+  
+  // Part 3---------------------------------------------------------------------------------------------------------------
 
-  //  var freq3 = map(diameter2*10, 0, width, 500, 1000);    
-  //     osc3.freq(freq3);
-  //     //console.log(freq3); 
+  /*
+  noStroke();
+  // background(0, 0, 0);
+  background(255);
+  // text(latestData, 10, 10);
+
+  ellipseMode(RADIUS);
+  // fill(255, 255, 0);
+  fill(40, 100, 100, 30);
+  // ellipse(windowHeight - 300, windowWidth / 4, diameter1 * 0.2, diameter1 * 0.2);
+  // ellipse(windowHeight + 300, windowWidth / 4, diameter1 * 0.2, diameter1 * 0.2);
+
+  ellipse(windowHeight - 300, windowWidth / (diameter1 / 100), diameter1 * 0.2, diameter1 * 0.2);
+  fill(255, 50, 100, 75);
+  ellipse(windowHeight + 400, windowWidth / (diameter1 / 50), diameter1 * 0.03, diameter1 * 0.1);
+  fill(40, 100, 255, 50);
+  ellipse(windowHeight / (diameter1 / 50), windowWidth / 4, diameter1 * 0.01, diameter1 * 1);
+  fill(255, 0, 100, 20);
+  rect(windowHeight - 100 / (diameter1 / 200), windowWidth / 4, diameter1 * 0.1, diameter1 * 0.1);
+
+  fill(40, 255, 100, 50);
+  // code from https://p5js.org/examples/hello-p5-simple-shapes.html
+  translate(diameter1 * 1.5, windowWidth / 2.5);
+  for (let i = 0; i < 10; i++) {
+    ellipse(100, sin(5), diameter1 * 0.1, tan(80));
+    rotate(PI / 5);
+  }
+
+  fill(40, 2, 100, 50);
+  // code from https://p5js.org/examples/hello-p5-simple-shapes.html
+  translate(diameter1 / sin(diameter1), -diameter1 / 2);
+  for (let i = 5; i < 10; i++) {
+    ellipse(1000, tan(100), diameter1, cos(500));
+    rotate(PI / 5);
+  }
+  noFill();
+  strokeWeight(20);
+  stroke(255, 0, 0);
+  
+  
+  var freq = map(diameter0, -diameter1, height, -2, 5);
+  osc1.freq(freq*freq3);
+  //console.log(freq);
+
+  var freq3 = map(diameter2 * 10, 0, width, 500, 1000);
+  osc3.freq(freq3*freq);
+  //console.log(freq3); 
+  */
+  // Part 2---------------------------------------------------------------------------------------------------------------
 }
 
 
